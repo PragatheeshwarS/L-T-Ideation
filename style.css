@@ -27,6 +27,7 @@ nav ul {
     overflow: hidden;
     float: right;
     margin-right: 3vw;
+    /* margin-top: -2vw; */
 }
 nav li {
     float: left;
@@ -730,21 +731,54 @@ nav li a:hover {
 }
 
 .copyright{
-  margin-left: 27.8vw;
-  color: white;
+  margin-left: 50vw;
   margin-top: 2vw;
+  p{
+    color: white;
+  }
+}
+
+.hamburger-menu {
+  display: none;
+  position: relative;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: 95vw;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  margin: 3px 0;
 }
 
 @media only screen and (max-width: 700px) {
 
 /*================================This is home start =======================================*/
+
+  .hamburger-menu{
+    display: block;
+    margin-left: 220vw;
+    /* position: fixed; */
+    margin-top: -5vw;
+    .bar{
+      width: 8vw;
+      margin: 2vw;
+    }
+  }
+
+  .nav ul{
+    display: none;
+  }
+
   #navbar{
     width: 233vw;
     /* background-color: red; */
   }
   #navbar img{
     margin-left: 40vw;
-    margin-top: 10vw;
+    margin-top: 7vw;
     transform: scale(5,5);
   }
   #overview{
@@ -781,7 +815,7 @@ nav li a:hover {
   }
   .left-line{
     margin-top: 12vw;
-    margin-left: 4vw;
+    margin-left: 10vw;
     height: 0.2vw;
     width: 68vw;
     background: linear-gradient(112deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 42%, rgba(127,127,130,1) 100%, rgba(0,0,0,1) 100%, rgba(0,212,255,1) 100%);
@@ -949,7 +983,7 @@ nav li a:hover {
     height: 570vh;
     .left-line{
       margin-top: 12vw;
-      margin-left: 10vw;
+      margin-left: 15vw;
       height: 0.2vw;
       width: 68vw;
       background: linear-gradient(112deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 42%, rgba(127,127,130,1) 100%, rgba(0,0,0,1) 100%, rgba(0,212,255,1) 100%);
@@ -1091,7 +1125,7 @@ nav li a:hover {
     height: 211vh;
     .left-line{
       margin-top: 12vw;
-      margin-left: 15vw;
+      margin-left: 25vw;
       height: 0.2vw;
       width: 68vw;
       background: linear-gradient(112deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 42%, rgba(127,127,130,1) 100%, rgba(0,0,0,1) 100%, rgba(0,212,255,1) 100%);
@@ -1262,6 +1296,18 @@ nav li a:hover {
       height: 8vw;
       font-size: 4vw;
       border-radius: 2vw;
+    }
+    .line-for-footer-at-the-end{
+      margin-top: 8vw;
+      width: 190vw;
+    }
+    .copyright{
+      margin-top: 8vw;
+      margin-left: 80vw;
+      p{
+        color: white;
+        font-size: 5vw;
+      }
     }
   }
 /*================================This is footer end =======================================*/
