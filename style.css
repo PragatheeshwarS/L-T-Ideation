@@ -984,7 +984,8 @@ nav li a:hover {
 /*================================This is Themes start =======================================*/
   #themes{
     width: 240vw;
-    height: 700vh;
+    /* height: 700vh; */
+    height: auto;
     .left-line{
       margin-top: 12vw;
       margin-left: 15vw;
@@ -1005,15 +1006,15 @@ nav li a:hover {
   #slots-for-themes{
     display: block;
     width: auto;
-    height: 30.7vw;
+    height: 340.7vh;
     /* background-color: red; */
     margin-left: 20vw;
   }
   #slots-for-themes2{
     display: block;
-    margin-top: 710vw;
+    margin-top: -15vw;
     width: auto;
-    height: 30.7vw;
+    height: 330.7vh;
     /* background-color: red; */
     margin-left: 20vw;
   }
