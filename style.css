@@ -984,8 +984,7 @@ nav li a:hover {
 /*================================This is Themes start =======================================*/
   #themes{
     width: 240vw;
-    /* height: 700vh; */
-    height: calc(100% + 100vh);
+    height: 750vh;
     .left-line{
       margin-top: 12vw;
       margin-left: 15vw;
