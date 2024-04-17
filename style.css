@@ -273,6 +273,10 @@ nav li a:hover {
     margin-top: -3.5vw;
   }
 }
+
+.days-hours, .min-sec{
+  display: flex;
+}
 .this-is-main-name{
   display: flex; 
   gap: 3vw; 
@@ -300,6 +304,9 @@ nav li a:hover {
     margin-top: 1vw;
     color: white;
   }
+}
+#glass-morphism{
+  margin-left: 11vw;
 }
 
 .line-timer{
@@ -930,55 +937,66 @@ nav li a:hover {
 /*================================This is timer start=======================================*/
   #timer-out-box{
     position: relative;
-    width: 210vw;
-    height: 68vw;
+    height: 150vh;
+    width: 240vw;
     background-color: black;
-    margin-left: 15vw;
-    border-radius: 4vw;
-    box-shadow: 10px 10px 60px rgb(200, 255, 0);
+    margin-left: 0vw;
+    /* border-radius: 4vw; */
+    box-shadow: 20px 20px 20px 20px 80px rgb(200, 255, 0);
     .timer-header{
       color: yellow;
       margin-left: 2vw;
-      font-size: 10vw;
+      font-size: 12vw;
     }
     #timer{
+      display: block;
       gap: 10vw;
     }
   }
 
+  #this-is-main-name{
+    display: flex;
+    gap: 10vw;
+  }
+
   #glass-morphism {
-    margin-top: 4vw;
-    margin-left: 1vw;
-    width: 40vw;
-    height: 40vw;
+    margin-top: 10vw;
+    margin-left: 90vw;
+    width: 60vw;
+    height: 60vw;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     border-radius: 3vw;
-    border: 2px solid rgb(195, 255, 0);
+    border: 1vw solid rgb(195, 255, 0);
     /* padding: 20px; */
-    box-shadow: 0 0 10px rgba(183, 255, 0, 0.1);
+    box-shadow: 2px 2px 120px rgba(183, 255, 0, 0.423);
+    animation: floater 1.5s infinite;
     h1{
-      font-size: 10vw;
+      font-size: 14vw;
       text-align: center;
       color: white;
     }
     p{
-      font-size: 5vw;
+      font-size: 8vw;
       text-align: center;
       margin-top: 5vw;
       color: white;
     }
     .line-timer{
-      width: 40vw;
+      width: 60vw;
       height: 0.5vw;
       margin-top: -2vw;
       background-color: white;
     }
   }
-
-  #timer-out-box .timer .days-hours, #timer-out-box .timer .min-sec{
-    gap: 5vw;
+  .days-hours, .min-sec{
+    display: block;
   }
+
+
+  /* #timer-out-box .timer .days-hours, #timer-out-box .timer .min-sec{
+    gap: 3vw;
+  } */
 /*================================This is timer end =======================================*/
 
 /*================================This is Themes start =======================================*/
